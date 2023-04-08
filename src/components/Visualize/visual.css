@@ -1,0 +1,12 @@
+.visualcode1 {
+  width: 100%;
+  flex: 1;
+  border-radius: 1rem;
+}
+
+.visualcode2 {
+  width: 1500px;
+  height: 650px;
+  border: 2px solid black;
+  margin-left: 10px;
+}
