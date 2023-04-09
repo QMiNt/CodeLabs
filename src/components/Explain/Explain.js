@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
+import "./exp.css";
 const { Configuration, OpenAIApi } = require("openai");
-
 const configuration = new Configuration({
-  apiKey:"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",
+  apiKey:"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",
 });
 delete configuration.baseOptions.headers['User-Agent'];
 const openai = new OpenAIApi(configuration);
-// const openai = new OpenAI("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");
-const textUp = "asdf";
+const textUp = "#include<iostream>/n using namespace std;/n int main()/n{/nint x=9,y=8;/ncout<<x+y;/n}/n";
 function Explain() {
   const [explanation, setExplanation] = useState('');
 
@@ -33,6 +32,8 @@ function Explain() {
 
   return (
     <div>
+      <textarea value={textUp} ></textarea>
+      <br/>
       <button onClick={explainCode}>Explain Code</button>
       <p>{explanation}</p>
     </div>
