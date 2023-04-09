@@ -1,52 +1,52 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logo from "../../images/logo-no-background.png";
-
+import React from 'react'
+import logo from "../../images/logo-no-background.png"
 const Header = () => {
-  return (
-    <header
-      className="header-area header-sticky wow slideInDown"
-      data-wow-duration="0.75s"
-      data-wow-delay="0s"
-    >
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <nav className="main-nav">
-              <Link to="/" className="logo">
-                <img src={logo} alt="logo" width={""} height={"75vh"} />
-              </Link>
-              <ul className="nav">
-                <li className="scroll-to-section">
-                  <Link to="/home" >
-                    Home
-                  </Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/build">Build</Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/visualize">Visualize</Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/explain">Explain</Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/discuss">Discuss</Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/contests">Contests</Link>
-                </li>
-                <li className="scroll-to-section">
-                  <Link to="/analyze">Analyze</Link>
-                </li>
-              </ul>
+    return (
+        <>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container">
+                    <a className="navbar-brand me-2" href="https://mdbgo.com/">
+                        <img src={logo} height={"40px"} />
+                    </a>
+                    <button className="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i className="fas fa-bars"></i>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarButtonsExample">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        </ul>
+                        <div className="d-flex align-items-center" id="navbarButtonsExample">
+                        
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/build">Build</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/visualize">Visualize</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/explain">Explain</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/collab">Collab</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/contests">Contest</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/analyze">Analyze</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-};
+        </>
+    )
+}
 
-export default Header;
+export default Header

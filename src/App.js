@@ -13,7 +13,7 @@ import Build from "./pages/Build";
 import Discussion from "./pages/Discussion";
 import Visualize from "./pages/Visualize";
 
-import Explain from "./pages/Explain";
+import Explain from "./components/Explain/Explain";
 
 import Contests from "./pages/Contests";
 
@@ -30,10 +30,10 @@ import TuringMachine from "./components/Visualize/VizAlgorithms/Turing Machine/t
 import Puzzle from "./components/Visualize/VizAlgorithms/15puzzleComponents/puzzle";
 import Graph from "./components/Visualize/VizAlgorithms/Graph/graph";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CommentGet from "./components/Discuss/CommentGet";
-import CommentPost from "./components/Discuss/CommentPost";
+// import CommentGet from "./components/Discuss/CommentGet";
+// import CommentPost from "./components/Discuss/CommentPost";
 import Analyze from "./pages/Analyze";
-
+// import Test from "./components/UI/Test";
 function App() {
 
   return (
@@ -59,16 +59,9 @@ function App() {
           <Route path="/visualize/turing" element={<><Header /><TuringMachine /></>} />
           <Route path="/visualize/puzzle" element={<><Header /><Puzzle /></>} />
           <Route path="/visualize/graph" element={<><Header /><Graph /></>} />
-          <Route path="/discuss" element={<><Header /><Discussion /></>} />
-          <Route
-            path="/comments/:id"
-            element={
-              <><Header/>
-                <CommentPost />
-                <CommentGet />
-              </>
-            }
-          />
+          {/* <Route path="/discuss" element={<><Header /><Discussion /></>} /> */}
+          {/* <Route path="/test" element={<><Test/></>} /> */}
+          
 
           <Route path="/explain" element={<><Header /><Explain /></>} />
           <Route path="/contests" element={<><Header /><Contests /></>} />
