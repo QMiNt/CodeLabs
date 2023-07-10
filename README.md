@@ -28,7 +28,7 @@ limit their ability to innovate and develop new approaches to problem solving.
 
 Here at CodeLabs, you'll be able to find various feature you are searching for. A designated place for all the software features That are availble on the internet . We provide proper description of along with the chatbot to how to use the feature. 
  
-The feature available in V Learn .
+The feature available in Codelabs .
 <br /> ->VISUALIZE ALGORITHMS.
 <br /> ->DRAG & DROP PROGRAMMING
 <br /> ->COLLABORATIVE PROGRAMMING
