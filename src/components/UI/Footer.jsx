@@ -9,18 +9,11 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="copyright-text">
-              <p>Designed & Developed by Team CODECOPS</p>
+              <p>Designed & Developed by Soumya gupta</p>
             </div>
           </div>
           <div className="col-lg-3">
-            <div className="footer-widget">
-              <h4>Team</h4>
-              <p>ADITYA AGARWAL</p>
-              <p>RITIESH BHATIA</p>
-              <p>HIMANSHU BNANSAL</p>
-              <p>SOUMYA GUPTA</p>
-
-            </div>
+           
           </div>
           <div className="col-lg-3">
             <div className="footer-widget">

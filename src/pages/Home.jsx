@@ -235,7 +235,7 @@ const Home = () => {
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
-                                  Django, REST Framework
+                                  Nodejs Express js, REST Framework
                                 </span>
                               </div>
                             </div>
